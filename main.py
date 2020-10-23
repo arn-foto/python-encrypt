@@ -63,6 +63,25 @@ def decode(keu, message):
         dec.append(chr((256 + ord(message[i])- ord(key_c)) % 256))
         return "".join(dec)
     
+# Function for choosing encrypt or decode
+def mode():
+    if(mode.get() == 'encode'):
+        Result.set(Encode(private_key.get(), Text.get()))
+    elif(mode.get() == 'decode'):
+        Result.set(Decode(private_key.get(), Text.get()))
+    else:
+        Result.set('Invalid Mode')
+        
+# Function to exit the window
+def exit():
+    root.destroy()
+    
+# Function to reset window
+def reset():
+    Text.set("")
+    private_key.set("")
+    mode.set("")
+    Result.set("")
     
     
 
