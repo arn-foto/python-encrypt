@@ -18,6 +18,13 @@ label(root, test = 'python encrypt', font = 'arial 20 bold').pack()
 # "pack" organized widget in block
 label(root, text = 'excrypt python', font = 'arial 20 bold').pack(side=BOTTOM)
 
+# here is where I will define the variables
+Text = Stringvar()
+private_key = Stringvar()
+mode = Stringvar()
+Result = Stringvar()
+
+
 
 
 
