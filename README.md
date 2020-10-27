@@ -1,1 +1,4 @@
-I am creating a message encrypter for a little practice =)
+To run program:
+
+- cd into project folder
+- run "python main.py"
