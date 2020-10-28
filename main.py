@@ -8,7 +8,7 @@ root.resizable(0,0)
 
 #title of the window
 root.title("Encode :: Decode")
-
+ 
 #label
 Label(root, text ='Message Encrypter', font = 'arial 20 bold').pack()
 Label(root, text ='! Remember your key !', font = 'arial 20 bold').pack(side =BOTTOM)
