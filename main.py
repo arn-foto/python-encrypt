@@ -7,7 +7,7 @@ root.geometry('500x300')
 root.resizable(1,1)
 
 #title of the window
-root.title("Encode :: Decode")
+root.title("Encrypt :: Decrypt")
  
 #label
 Label(root, text ='Password (D)(E)crypt', font = 'arial 20 bold').pack()
