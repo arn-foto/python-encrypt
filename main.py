@@ -4,13 +4,13 @@ import base64
 #initialize window
 root = Tk()
 root.geometry('500x300')
-root.resizable(0,0)
+root.resizable(1,1)
 
 #title of the window
 root.title("Encode :: Decode")
  
 #label
-Label(root, text ='Message Encrypter', font = 'arial 20 bold').pack()
+Label(root, text ='Password (D)(E)crypt', font = 'arial 20 bold').pack()
 Label(root, text ='! Remember your key !', font = 'arial 20 bold').pack(side =BOTTOM)
 
 #define variables
@@ -67,7 +67,7 @@ Label(root, font = 'arial 12 bold', text ='KEY - do not lose!').place(x=60, y = 
 Entry(root, font = 'arial 10', textvariable = private_key , bg ='ghost white').place(x=290, y = 90)
 
 #mode
-Label(root, font = 'arial 12 bold', text ='MODE(e-encode, d-decode)').place(x=60, y = 120)
+Label(root, font = 'arial 12 bold', text ='MODE - (e, d)').place(x=60, y = 120)
 Entry(root, font = 'arial 10', textvariable = mode , bg= 'ghost white').place(x=290, y = 120)
 
 #result
